@@ -1,0 +1,314 @@
+
+
+
+<head>
+  <title>กรอกข้อมูลลูกค้า</title>
+  <meta charset="utf-8">
+  <style type = "text/css">
+    @font-face {
+      font-family: title;
+      src :url('fonts/Prompt-Light.ttf');
+    }
+    .font1 {
+      font-family: title;
+      font-size: 15px;
+    }
+    </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+
+<hr>
+<div class="container bootstrap snippet">
+    <div class="row font1">
+  		<div class="col-sm-10"><h1>หน้าสมาชิก</h1></div>
+    	<div class="col-sm-2"><a href="/users" class="pull-right"><img title="profile image" class="img-circle img-responsive" src="https://www.grab.com/th/wp-content/uploads/sites/10/2018/04/Grab-logo-social.png"></a></div>
+    </div>
+    <div class="row">
+  		<div class="col-sm-3"><!--left col-->
+
+
+      <!--<div class="text-center">
+        <img src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" class="avatar img-circle img-thumbnail" alt="avatar">
+        <h6>Upload a different photo...</h6>
+        <input type="file" class="text-center center-block file-upload">
+      </div></hr><br>-->
+
+
+          <div class="panel panel-default font1">
+            <div class="panel-heading">ข้อมูลของลูกค้า <i class="fa fa-link fa-1x"></i></div>
+            <!-- <div class="panel-body"> <p> คะแนนลูกค้า </p> </div> -->
+            <div class="panel-body form-group">
+
+
+                          <div class="col-xs">
+                              <label for="cus_username"><h4>ชื่อผู้ใช้</h4></label>
+                              <input type="text" class="form-control" name="cus_username" id="cus_username" placeholder="ชื่อผู้ใช้" title="กรุณาใส่ชื่อผู้ใช้">
+                          </div>
+
+
+
+                          <div class="col-xs">
+                              <label for="cus_password"><h4>รหัสผ่าน</h4></label>
+                              <input type="password" class="form-control" id="cus_password" placeholder="ใส่รหัสผ่าน" title="กรุณาใส่รหัสผ่าน">
+                          </div>
+
+                <div class="col-xs">
+                    <label for="cus_reward_point"><p>คะแนนลูกค้า</p></label>
+                    <input type="text" class="form-control" name="cus_reward_point" id="cus_reward_point" placeholder="คะแนน">
+                </div>
+
+                <div class="col-xs">
+                  <label for="id_cus_status"><p> รหัสสถานะลูกค้า</p></label>
+                    <select type="text" class="form-control" name="id_cus_status" id="id_cus_status" placeholder="สถานะลูกค้า">
+						<option value = "check" > Checked </option>
+						<option value = "uncheck" > Unhecked </option>
+					</select>
+                </div>
+            </div>
+
+          </div>
+
+
+        <!--  <ul class="list-group font1 ">
+            <li class="list-group-item text-muted">Activity <i class="fa fa-dashboard fa-1x"></i></li>
+            <li class="list-group-item text-right"><span class="pull-left"><strong>Shares</strong></span> 125</li>
+            <li class="list-group-item text-right"><span class="pull-left"><strong>Likes</strong></span> 13</li>
+            <li class="list-group-item text-right"><span class="pull-left"><strong>Posts</strong></span> 37</li>
+            <li class="list-group-item text-right"><span class="pull-left"><strong>Followers</strong></span> 78</li>
+          </ul> -->
+
+        <!--  <div class="panel panel-default">
+            <div class="panel-heading">Social Media</div>
+            <div class="panel-body">
+            	<i class="fa fa-facebook fa-2x"></i> <i class="fa fa-github fa-2x font1"></i> <i class="fa fa-twitter fa-2x"></i> <i class="fa fa-pinterest fa-2x"></i> <i class="fa fa-google-plus fa-2x"></i>
+            </div>
+          </div> -->
+
+        </div><!--/col-3-->
+    	<div class="col-sm-9 font1">
+            <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#home">หน้าข้อมูลส่วนตัว</a></li>
+                <li><a data-toggle="tab" href="#messages">ออเดอร์</a></li>
+                <!--<li><a data-toggle="tab" href="#settings">Menu 2</a></li>-->
+              </ul>
+
+
+          <div class="tab-content font1">
+            <div class="tab-pane active" id="home">
+                <hr>
+                  <form class="form" action="##" method="post" id="registrationForm">
+                      <div class="form-group">
+
+                          <div class="col-xs-6">
+                              <label for="cus_name"><h4>ชื่อ และ นามสกุล</h4></label>
+                              <input type="text" class="form-control" name="cus_name" id="cus_name" placeholder="ชื่อ และ นามสกุล" title="กรุณากรอกชื่อและนามสกุล">
+                          </div>
+                      </div>
+                      <div class="form-group">
+
+                          <div class="col-xs-6">
+                            <label for="cus_email"><h4>อีเมลล์</h4></label>
+                              <input type="text" class="form-control" name="cus_email" id="cus_email" placeholder="อีเมลล์" title="กรุณากรอกอีเมลล์">
+                          </div>
+                      </div>
+
+                      <div class="form-group">
+
+                          <div class="col-xs-6">
+                              <label for="cus_address"><h4>ที่อยู่</h4></label>
+                              <input type="text" class="form-control" name="cus_address" id="cus_address" placeholder="ใส่ที่อยู่" title="กรุณาใส่ที่อยู่">
+                          </div>
+                      </div>
+
+                      <div class="form-group">
+                          <div class="col-xs-6">
+                             <label for="cus_tel"><h4>เบอร์มือถือ</h4></label>
+                              <input type="text" class="form-control" name="cus_tel" id="cus_tel" placeholder="ใส่เบอร์มือถือ" title="กรุณากรอกเบอร์มือถือ">
+                          </div>
+                      </div>
+
+
+                      <div class="form-group">
+
+                          <div class="col-xs-6">
+                            <label for="cus_credit_card"><h4>หมายเลขบัตรเครดิตลูกค้า</h4></label>
+                              <input type="text" class="form-control" name="cus_credit_card" id="cus_credit_card" placeholder="รหัสบัตรเครดิต" title="กรุณาใส่บัตรเครดิต">
+                          </div>
+
+                          <div class="col-xs-3">
+                            <label for="cus_credit_card"><h4>วันหมดอายุ</h4></label>
+                              <input type="text" class="form-control" name="cus_credit_card" id="cus_credit_card" placeholder="วันหมดอายุ" title="กรุณาใส่บัตรเครดิต">
+                          </div>
+
+                          <div class="col-xs-3">
+                            <label for="cus_credit_card"><h4>CVV</h4></label>
+                              <input type="text" class="form-control" name="cus_credit_card" id="cus_credit_card" placeholder="CVV" title="กรุณาใส่บัตรเครดิต">
+                          </div>
+                      </div>
+
+                      <div class="form-group">
+                           <div class="col-xs-12">
+                                <br>
+                              	<button class="btn btn-lg btn-success" type="submit"><i class="glyphicon glyphicon-ok-sign"></i> บันทึกข้อมูล</button>
+                               	<button class="btn btn-lg" type="reset"><i class="glyphicon glyphicon-repeat"></i> ลบทั้งหมด</button>
+                            </div>
+                      </div>
+              	</form>
+
+              <hr>
+
+             </div><!--/tab-pane-->
+             <div class="tab-pane" id="messages">
+
+              <!-- <h2></h2>
+
+               <hr>
+                  <form class="form" action="##" method="post" id="registrationForm">
+                      <div class="form-group">
+
+                          <div class="col-xs-6">
+                              <label for="F_L_NAME"><h4>First name</h4></label>
+                              <input type="text" class="form-control" name="F_L_NAME" id="F_L_NAME" placeholder="first name" title="enter your first name if any.">
+                          </div>
+                      </div>
+                      <div class="form-group">
+
+                          <div class="col-xs-6">
+                            <label for="EMAIL_NAME"><h4>Last name</h4></label>
+                              <input type="text" class="form-control" name="EMAIL_NAME" id="EMAIL_NAME" placeholder="last name" title="enter your last name if any.">
+                          </div>
+                      </div>
+
+                      <div class="form-group">
+
+                          <div class="col-xs-6">
+                              <label for="phone"><h4>Phone</h4></label>
+                              <input type="text" class="form-control" name="phone" id="phone" placeholder="enter phone" title="enter your phone number if any.">
+                          </div>
+                      </div>
+
+                      <div class="form-group">
+                          <div class="col-xs-6">
+                             <label for="mobile"><h4>Mobile</h4></label>
+                              <input type="text" class="form-control" name="mobile" id="mobile" placeholder="enter mobile number" title="enter your mobile number if any.">
+                          </div>
+                      </div>
+                      <div class="form-group">
+
+                          <div class="col-xs-6">
+                              <label for="email"><h4>Email</h4></label>
+                              <input type="email" class="form-control" name="email" id="email" placeholder="you@email.com" title="enter your email.">
+                          </div>
+                      </div>
+                      <div class="form-group">
+
+                          <div class="col-xs-6">
+                              <label for="email"><h4>Location</h4></label>
+                              <input type="email" class="form-control" id="location" placeholder="somewhere" title="enter a location">
+                          </div>
+                      </div>
+                      <div class="form-group">
+
+                          <div class="col-xs-6">
+                              <label for="password"><h4>Password</h4></label>
+                              <input type="password" class="form-control" name="password" id="password" placeholder="password" title="enter your password.">
+                          </div>
+                      </div>
+                      <div class="form-group">
+
+                          <div class="col-xs-6">
+                            <label for="password2"><h4>Verify</h4></label>
+                              <input type="password" class="form-control" name="password2" id="password2" placeholder="password2" title="enter your password2.">
+                          </div>
+                      </div>
+                      <div class="form-group">
+                           <div class="col-xs-12">
+                                <br>
+                              	<button class="btn btn-lg btn-success" type="submit"><i class="glyphicon glyphicon-ok-sign"></i> Save</button>
+                               	<button class="btn btn-lg" type="reset"><i class="glyphicon glyphicon-repeat"></i> Reset</button>
+                            </div>
+                      </div>
+              	</form>
+
+             </div><!--/tab-pane
+             <div class="tab-pane" id="settings">
+
+
+                  <hr>
+                  <form class="form" action="##" method="post" id="registrationForm">
+                      <div class="form-group">
+
+                          <div class="col-xs-6">
+                              <label for="F_L_NAME"><h4>First name</h4></label>
+                              <input type="text" class="form-control" name="F_L_NAME" id="F_L_NAME" placeholder="first name" title="enter your first name if any.">
+                          </div>
+                      </div>
+                      <div class="form-group">
+
+                          <div class="col-xs-6">
+                            <label for="EMAIL_NAME"><h4>Last name</h4></label>
+                              <input type="text" class="form-control" name="EMAIL_NAME" id="email_id" placeholder="last name" title="enter your last name if any.">
+                          </div>
+                      </div>
+
+                      <div class="form-group">
+
+                          <div class="col-xs-6">
+                              <label for="phone"><h4>Phone</h4></label>
+                              <input type="text" class="form-control" name="phone" id="phone" placeholder="enter phone" title="enter your phone number if any.">
+                          </div>
+                      </div>
+
+                      <div class="form-group">
+                          <div class="col-xs-6">
+                             <label for="mobile"><h4>Mobile</h4></label>
+                              <input type="text" class="form-control" name="mobile" id="mobile" placeholder="enter mobile number" title="enter your mobile number if any.">
+                          </div>
+                      </div>
+                      <div class="form-group">
+
+                          <div class="col-xs-6">
+                              <label for="email"><h4>Email</h4></label>
+                              <input type="email" class="form-control" name="email" id="email" placeholder="you@email.com" title="enter your email.">
+                          </div>
+                      </div>
+                      <div class="form-group">
+
+                          <div class="col-xs-6">
+                              <label for="email"><h4>Location</h4></label>
+                              <input type="email" class="form-control" id="location" placeholder="somewhere" title="enter a location">
+                          </div>
+                      </div>
+                      <div class="form-group">
+
+                          <div class="col-xs-6">
+                              <label for="password"><h4>Password</h4></label>
+                              <input type="password" class="form-control" name="password" id="password" placeholder="password" title="enter your password.">
+                          </div>
+                      </div>
+                      <div class="form-group">
+
+                          <div class="col-xs-6">
+                            <label for="password2"><h4>Verify</h4></label>
+                              <input type="password" class="form-control" name="password2" id="password2" placeholder="password2" title="enter your password2.">
+                          </div>
+                      </div>
+                      <div class="form-group">
+                           <div class="col-xs-12">
+                                <br>
+                              	<button class="btn btn-lg btn-success pull-right" type="submit"><i class="glyphicon glyphicon-ok-sign"></i> Save</button>
+                               	<!--<button class="btn btn-lg" type="reset"><i class="glyphicon glyphicon-repeat"></i> Reset</button>
+                            </div>
+                      </div>
+              	</form>
+              </div>-->
+
+              </div><!--/tab-pane-->
+          </div><!--/tab-content-->
+
+        </div><!--/col-9-->
+    </div><!--/row-->
